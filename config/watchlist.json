@@ -1,0 +1,26 @@
+{
+  "schema_version": 1,
+  "source_note": "User-provided initial allowlist; not independently verified.",
+  "sharia_reference": "User-provided reference: intersection of the top-25 holdings of HLAL (FTSE USA Shariah Index) and SPUS (S&P 500 Sharia Industry Exclusions Index). This is not a religious ruling or independent verification.",
+  "approval_date": "2026-11-27",
+  "symbols": [
+    {"symbol": "AAPL", "name": "Apple"},
+    {"symbol": "NVDA", "name": "NVIDIA"},
+    {"symbol": "MSFT", "name": "Microsoft"},
+    {"symbol": "GOOGL", "name": "Alphabet"},
+    {"symbol": "AVGO", "name": "Broadcom"},
+    {"symbol": "TSLA", "name": "Tesla"},
+    {"symbol": "LLY", "name": "Eli Lilly"},
+    {"symbol": "MU", "name": "Micron"},
+    {"symbol": "AMD", "name": "Advanced Micro Devices"},
+    {"symbol": "XOM", "name": "ExxonMobil"},
+    {"symbol": "JNJ", "name": "Johnson & Johnson"},
+    {"symbol": "CSCO", "name": "Cisco"},
+    {"symbol": "PG", "name": "Procter & Gamble"},
+    {"symbol": "AMAT", "name": "Applied Materials"},
+    {"symbol": "LRCX", "name": "Lam Research"},
+    {"symbol": "PANW", "name": "Palo Alto Networks"},
+    {"symbol": "TXN", "name": "Texas Instruments"},
+    {"symbol": "LIN", "name": "Linde"}
+  ]
+}
