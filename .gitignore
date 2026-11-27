@@ -1,18 +1,5 @@
 # AI HALAL INVESTOR LITE
-# Phase 1/2 local runtime files and secrets
-__pycache__/
-*.py[cod]
-*$py.class
-.Python
-.venv/
-venv/
-env/
-ENV/
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Secrets and local runtime state
+# Sealed local state
 .env
 .env.*
 !.env.example
@@ -22,9 +9,11 @@ instance/
 *.sqlite3
 KILL
 KILL.*
-
-# Editors and OS files
-.vscode/
-.idea/
-.DS_Store
-Thumbs.db
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+ENV/
+.pytest_cache/
+.coverage
+htmlcov/

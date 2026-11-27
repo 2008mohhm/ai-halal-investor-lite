@@ -1,16 +1,1 @@
-* { box-sizing: border-box; }
-:root { color-scheme: dark; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #101827; color: #edf2f7; }
-body { margin: 0; min-height: 100vh; }
-.container { width: min(100% - 28px, 720px); margin: 0 auto; padding: 28px 0 36px; }
-header { padding: 12px 4px 20px; }
-h1 { font-size: clamp(1.5rem, 7vw, 2.2rem); margin: 4px 0 8px; overflow-wrap: anywhere; }
-h2 { font-size: 1.15rem; margin-top: 0; }
-.eyebrow, .muted { color: #aab8ca; }
-.notice, .card { border: 1px solid #2d3b50; border-radius: 14px; padding: 16px; margin: 14px 0; background: #172235; }
-.notice { border-right: 4px solid #e5ae50; }
-.notice.danger { border-right-color: #ef7373; background: #351d28; }
-.symbols { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 8px; }
-.symbols li { display: flex; flex-direction: column; gap: 8px; padding: 11px; border-radius: 9px; background: #202e43; }
-.symbol-row { display: flex; gap: 12px; align-items: center; }
-.ticker { direction: ltr; font-weight: 750; color: #87d7b4; min-width: 54px; }
-footer { color: #aab8ca; font-size: .88rem; padding: 16px 4px; line-height: 1.6; }
+* { box-sizing:border-box } :root{color-scheme:dark;font-family:system-ui,sans-serif;background:#101827;color:#edf2f7} body{margin:0} .container{width:min(100% - 28px,720px);margin:auto;padding:28px 0}.notice,.card{border:1px solid #2d3b50;border-radius:14px;padding:16px;margin:14px 0;background:#172235}.notice{border-right:4px solid #e5ae50}.notice.danger{border-right-color:#ef7373}.eyebrow,.muted,footer{color:#aab8ca}.symbols{list-style:none;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:8px}.symbols li{display:grid;gap:6px;padding:11px;border-radius:9px;background:#202e43}.ticker{direction:ltr;font-weight:700;color:#87d7b4}

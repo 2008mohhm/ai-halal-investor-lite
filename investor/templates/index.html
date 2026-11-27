@@ -1,20 +1,14 @@
 <!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#101827">
-  <title>AI HALAL INVESTOR LITE</title>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101827"><title>AI HALAL INVESTOR LITE</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
-  <script defer src="{{ url_for('static', filename='app.js') }}"></script>
 </head>
-<body>
-  <main class="container">
-    <header><p class="eyebrow">لوحة تعليمية · المرحلة 3</p><h1>AI HALAL INVESTOR LITE</h1><p class="muted">تحليل وتوثيق فقط — لا أوامر ولا وسيط.</p></header>
-    {% if stopped %}<section class="notice danger" role="alert"><strong>الإيقاف الطارئ مفعل</strong><p>أنشئ/احذف ملف KILL من طرف الجهاز فقط. لا توجد معاملات نشطة.</p></section>{% endif %}
-    <section class="notice"><strong>وضع آمن: لا تداول</strong><p>تعليم فقط؛ لا ضمان للربح ولا فتوى شرعية ولا اتصال بوسيط.</p></section>
-    {% if error %}<section class="notice danger"><strong>تعذر تحميل القائمة</strong><p>{{ error }}</p></section>{% else %}<section class="card"><h2>القائمة البيضاء ({{ watchlist|length }})</h2><ul class="symbols">{% for item in watchlist %}<li><div class="symbol-row"><span class="ticker">{{ item.symbol }}</span><span>{{ item.name }}</span></div>{% if item.last_close %}<small>إغلاق {{ item.last_close }} · {{ item.last_date }}</small><small>الحالة: {{ item.report.regime }}</small>{% else %}<small>لا توجد بيانات محملة</small>{% endif %}</li>{% endfor %}</ul></section>{% endif %}
-    <footer>التداول ينطوي على مخاطر وقد تخسر رأس المال.</footer>
-  </main>
-</body>
-</html>
+<body><main class="container">
+  <header><p class="eyebrow">المرحلة النهائية · أسوار تشغيل فقط</p><h1>AI HALAL INVESTOR LITE</h1><p class="muted">الوضع الحالي: <strong>{{ mode }}</strong></p></header>
+  {% if stopped %}<section class="notice danger"><strong>الإيقاع الطارئ مفعل</strong><p>أنشئ ملف KILL على الجهاز. لا يمكن الانتقال إلى وضع حي.</p></section>{% endif %}
+  <section class="notice"><strong>لا تنفيذ حقيقي</strong><p>توجد واجهات حالة ومراجعة فقط؛ لا تنفذ أوامر، ولا يوجد AI قرار أو مفتاح وساطة.</p></section>
+  {% if error %}<section class="notice danger"><strong>خطأ في القائمة</strong><p>{{ error }}</p></section>{% else %}<section class="card"><h2>القائمة البيضاء ({{ watchlist|length }})</h2><ul class="symbols">{% for item in watchlist %}<li><span class="ticker">{{ item.symbol }}</span><span>{{ item.name }}</span>{% if item.last_close %}<small>{{ item.last_close }} · {{ item.last_date }} · {{ item.report.regime }}</small>{% else %}<small>لا توجد بيانات محملة</small>{% endif %}</li>{% endfor %}</ul></section>{% endif %}
+  <footer>تعليم فقط. لا ضمان للربح ولا فتوى شرعية أو تنفيذ معتمد.</footer>
+</main></body></html>
