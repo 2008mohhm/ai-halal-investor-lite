@@ -1,5 +1,5 @@
 # AI HALAL INVESTOR LITE
-# Phase 1/4 — project foundation only. No market data or order execution is enabled.
+# Phase 1/2 local runtime files and secrets
 __pycache__/
 *.py[cod]
 *$py.class

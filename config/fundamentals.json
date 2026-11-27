@@ -1,0 +1,5 @@
+{
+  "notice": "Fundamentals must be reviewed and supplied by the user from a reliable source. Empty by default; signals remain blocked.",
+  "max_debt_to_equity": 0.30,
+  "companies": {}
+}
